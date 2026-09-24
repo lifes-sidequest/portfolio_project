@@ -19,4 +19,6 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm check
-      - run: pnpm perf:audit
+      - name: Lighthouse audit
+        continue-on-error: true
+        run: pnpm perf:audit

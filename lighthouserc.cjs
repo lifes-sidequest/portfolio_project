@@ -1,7 +1,7 @@
 module.exports = {
   ci: {
     collect: {
-      startServerCommand: "python3 -m http.server 3100 --directory out --bind 127.0.0.1",
+      startServerCommand: "python3 -u -m http.server 3100 --directory out --bind 127.0.0.1",
       startServerReadyPattern: "Serving HTTP",
       startServerReadyTimeout: 15_000,
       chromeFlags: "--no-sandbox --headless --disable-dev-shm-usage",

@@ -1,0 +1,359 @@
+[
+  {
+    "condition": "desktop",
+    "run": 1,
+    "navigationMs": 130,
+    "loaderMs": 2432,
+    "domContentLoaded": 52.30000000074506,
+    "loadEvent": 128.2000000011176,
+    "transferredBytes": 933407,
+    "transferredByType": {
+      "link": 119725,
+      "script": 224863,
+      "css": 547758,
+      "video": 20845,
+      "fetch": 20216
+    },
+    "resourceCount": 95,
+    "largestResources": [
+      {
+        "name": "http://localhost:3100/images/home/berlin-city-light-new1.jpg",
+        "type": "css",
+        "bytes": 353866
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-500-subset.woff2",
+        "type": "css",
+        "bytes": 92804
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-400-subset.woff2",
+        "type": "css",
+        "bytes": 88488
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/e90a4a03-1e40ef40f3a2a582.js",
+        "type": "script",
+        "bytes": 63176
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/914-2a6176c7f9a4d984.js",
+        "type": "script",
+        "bytes": 61492
+      },
+      {
+        "name": "http://localhost:3100/images/brand/logo-cooking-the-design.svg",
+        "type": "link",
+        "bytes": 54356
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/04763798-c5b0141a5133fe94.js",
+        "type": "script",
+        "bytes": 20077
+      },
+      {
+        "name": "http://localhost:3100/images/projects/kaspi-home/home-page.mp4",
+        "type": "video",
+        "bytes": 18445
+      }
+    ]
+  },
+  {
+    "condition": "desktop",
+    "run": 2,
+    "navigationMs": 147,
+    "loaderMs": 2459,
+    "domContentLoaded": 35.80000000074506,
+    "loadEvent": 146.30000000074506,
+    "transferredBytes": 17185735,
+    "transferredByType": {
+      "link": 119725,
+      "script": 224863,
+      "css": 547758,
+      "video": 16273173,
+      "fetch": 20216
+    },
+    "resourceCount": 93,
+    "largestResources": [
+      {
+        "name": "http://localhost:3100/images/projects/kaspi-home/home-page.mp4",
+        "type": "video",
+        "bytes": 16253228
+      },
+      {
+        "name": "http://localhost:3100/images/home/berlin-city-light-new1.jpg",
+        "type": "css",
+        "bytes": 353866
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-500-subset.woff2",
+        "type": "css",
+        "bytes": 92804
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-400-subset.woff2",
+        "type": "css",
+        "bytes": 88488
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/e90a4a03-1e40ef40f3a2a582.js",
+        "type": "script",
+        "bytes": 63176
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/914-2a6176c7f9a4d984.js",
+        "type": "script",
+        "bytes": 61492
+      },
+      {
+        "name": "http://localhost:3100/images/brand/logo-cooking-the-design.svg",
+        "type": "link",
+        "bytes": 54356
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/04763798-c5b0141a5133fe94.js",
+        "type": "script",
+        "bytes": 20077
+      }
+    ]
+  },
+  {
+    "condition": "desktop",
+    "run": 3,
+    "navigationMs": 106,
+    "loaderMs": 2412,
+    "domContentLoaded": 36.09999999962747,
+    "loadEvent": 105.19999999925494,
+    "transferredBytes": 932807,
+    "transferredByType": {
+      "link": 119725,
+      "script": 224863,
+      "css": 547758,
+      "video": 20245,
+      "fetch": 20216
+    },
+    "resourceCount": 93,
+    "largestResources": [
+      {
+        "name": "http://localhost:3100/images/home/berlin-city-light-new1.jpg",
+        "type": "css",
+        "bytes": 353866
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-500-subset.woff2",
+        "type": "css",
+        "bytes": 92804
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-400-subset.woff2",
+        "type": "css",
+        "bytes": 88488
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/e90a4a03-1e40ef40f3a2a582.js",
+        "type": "script",
+        "bytes": 63176
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/914-2a6176c7f9a4d984.js",
+        "type": "script",
+        "bytes": 61492
+      },
+      {
+        "name": "http://localhost:3100/images/brand/logo-cooking-the-design.svg",
+        "type": "link",
+        "bytes": 54356
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/04763798-c5b0141a5133fe94.js",
+        "type": "script",
+        "bytes": 20077
+      },
+      {
+        "name": "http://localhost:3100/images/projects/kaspi-home/home-page.mp4",
+        "type": "video",
+        "bytes": 18445
+      }
+    ]
+  },
+  {
+    "condition": "mobile",
+    "run": 1,
+    "navigationMs": 119,
+    "loaderMs": 2420,
+    "domContentLoaded": 35.59999999962747,
+    "loadEvent": 117.90000000037253,
+    "transferredBytes": 893586,
+    "transferredByType": {
+      "link": 119725,
+      "script": 196867,
+      "css": 193892,
+      "video": 20245,
+      "fetch": 8991,
+      "img": 353866
+    },
+    "resourceCount": 70,
+    "largestResources": [
+      {
+        "name": "http://localhost:3100/images/home/berlin-city-light-new1.jpg",
+        "type": "img",
+        "bytes": 353866
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-500-subset.woff2",
+        "type": "css",
+        "bytes": 92804
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-400-subset.woff2",
+        "type": "css",
+        "bytes": 88488
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/e90a4a03-1e40ef40f3a2a582.js",
+        "type": "script",
+        "bytes": 63176
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/914-2a6176c7f9a4d984.js",
+        "type": "script",
+        "bytes": 61492
+      },
+      {
+        "name": "http://localhost:3100/images/brand/logo-cooking-the-design.svg",
+        "type": "link",
+        "bytes": 54356
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/04763798-c5b0141a5133fe94.js",
+        "type": "script",
+        "bytes": 20077
+      },
+      {
+        "name": "http://localhost:3100/images/projects/kaspi-home/home-page.mp4",
+        "type": "video",
+        "bytes": 18445
+      }
+    ]
+  },
+  {
+    "condition": "mobile",
+    "run": 2,
+    "navigationMs": 119,
+    "loaderMs": 2421,
+    "domContentLoaded": 37.19999999925494,
+    "loadEvent": 117.90000000037253,
+    "transferredBytes": 894186,
+    "transferredByType": {
+      "link": 119725,
+      "script": 196867,
+      "css": 193892,
+      "video": 20845,
+      "fetch": 8991,
+      "img": 353866
+    },
+    "resourceCount": 72,
+    "largestResources": [
+      {
+        "name": "http://localhost:3100/images/home/berlin-city-light-new1.jpg",
+        "type": "img",
+        "bytes": 353866
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-500-subset.woff2",
+        "type": "css",
+        "bytes": 92804
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-400-subset.woff2",
+        "type": "css",
+        "bytes": 88488
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/e90a4a03-1e40ef40f3a2a582.js",
+        "type": "script",
+        "bytes": 63176
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/914-2a6176c7f9a4d984.js",
+        "type": "script",
+        "bytes": 61492
+      },
+      {
+        "name": "http://localhost:3100/images/brand/logo-cooking-the-design.svg",
+        "type": "link",
+        "bytes": 54356
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/04763798-c5b0141a5133fe94.js",
+        "type": "script",
+        "bytes": 20077
+      },
+      {
+        "name": "http://localhost:3100/images/projects/kaspi-home/home-page.mp4",
+        "type": "video",
+        "bytes": 18445
+      }
+    ]
+  },
+  {
+    "condition": "mobile",
+    "run": 3,
+    "navigationMs": 127,
+    "loaderMs": 2425,
+    "domContentLoaded": 34.70000000111759,
+    "loadEvent": 125.80000000074506,
+    "transferredBytes": 893586,
+    "transferredByType": {
+      "link": 119725,
+      "script": 196867,
+      "css": 193892,
+      "video": 20245,
+      "fetch": 8991,
+      "img": 353866
+    },
+    "resourceCount": 70,
+    "largestResources": [
+      {
+        "name": "http://localhost:3100/images/home/berlin-city-light-new1.jpg",
+        "type": "img",
+        "bytes": 353866
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-500-subset.woff2",
+        "type": "css",
+        "bytes": 92804
+      },
+      {
+        "name": "http://localhost:3100/fonts/google-sans-400-subset.woff2",
+        "type": "css",
+        "bytes": 88488
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/e90a4a03-1e40ef40f3a2a582.js",
+        "type": "script",
+        "bytes": 63176
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/914-2a6176c7f9a4d984.js",
+        "type": "script",
+        "bytes": 61492
+      },
+      {
+        "name": "http://localhost:3100/images/brand/logo-cooking-the-design.svg",
+        "type": "link",
+        "bytes": 54356
+      },
+      {
+        "name": "http://localhost:3100/_next/static/chunks/04763798-c5b0141a5133fe94.js",
+        "type": "script",
+        "bytes": 20077
+      },
+      {
+        "name": "http://localhost:3100/images/projects/kaspi-home/home-page.mp4",
+        "type": "video",
+        "bytes": 18445
+      }
+    ]
+  }
+]

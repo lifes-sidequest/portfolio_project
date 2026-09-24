@@ -1,0 +1,47 @@
+.agent-profile-page {
+  --agent-ink: #292c35;
+  --agent-muted: #676b76;
+  --agent-link: #292c35;
+  min-height: 100vh;
+  padding: 68px 24px 160px;
+  background: var(--bg,#fff);
+  color: var(--agent-ink);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+  line-height: 1.7;
+}
+[data-theme="dark"] .agent-profile-page {
+  --agent-ink: #e5e6eb;
+  --agent-muted: #a2a5af;
+  --agent-link: #e5e6eb;
+}
+.agent-profile-shell { width: min(100%, 480px); margin: 0 auto; }
+.agent-profile-document { overflow-wrap: anywhere; }
+.agent-profile-intro { position: relative; }
+.agent-profile-syntax { position: absolute; left: -2ch; color: var(--agent-ink); }
+.agent-profile-document h1,
+.agent-profile-document h2 { font: inherit; font-weight: 600; letter-spacing: 0; }
+.agent-profile-document h1 { margin: 0 0 28px; }
+.agent-profile-document h2 { margin: 0 0 20px; }
+.agent-profile-document h2 span { font-weight: 400; }
+.agent-profile-document p { margin: 0 0 22px; }
+.agent-profile-document section { margin-top: 32px; }
+.agent-profile-document ul { margin: 0; padding: 0; list-style: none; }
+.agent-profile-list { display: grid; gap: 18px; }
+.agent-profile-list li { display: grid; gap: 2px; padding-left: 2ch; position: relative; }
+.agent-profile-list li::before { content: "-"; position: absolute; left: 0; }
+.agent-profile-list strong { font-weight: 600; }
+.agent-profile-list li > span,
+.agent-profile-note { color: var(--agent-muted); }
+.agent-profile-document a { color: var(--agent-link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.agent-profile-document a:hover { text-decoration-thickness: 2px; }
+.agent-profile-document a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; border-radius: 2px; }
+.agent-profile-links { display: grid; gap: 7px; }
+.agent-profile-links li { display: flex; justify-content: flex-start; align-items: baseline; gap: 8px; max-width: 30ch; }
+.agent-profile-links li span { color: var(--agent-muted); flex: 0 0 auto; font-size: 16px; line-height: 1; }
+.agent-profile-source { font-size: inherit; white-space: nowrap; }
+.agent-profile-note { margin-top: 18px !important; }
+.agent-profile-status { display: inline; color: var(--agent-muted); font-size: inherit; font-weight: 400; }
+@media (max-width: 640px) {
+  .agent-profile-page { padding: 42px 28px 120px; }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .stamp { fill: #181818; }
+    .letter { fill: #fff; }
+    @media (prefers-color-scheme: dark) {
+      .stamp { fill: #fff; }
+      .letter { fill: #181818; }
+    }
+  </style>
+  <mask id="stamp-cutouts">
+    <rect width="64" height="64" rx="7" fill="#fff"/>
+    <g fill="#000">
+      <circle cx="8" cy="0" r="3.5"/><circle cx="20" cy="0" r="3.5"/><circle cx="32" cy="0" r="3.5"/><circle cx="44" cy="0" r="3.5"/><circle cx="56" cy="0" r="3.5"/>
+      <circle cx="8" cy="64" r="3.5"/><circle cx="20" cy="64" r="3.5"/><circle cx="32" cy="64" r="3.5"/><circle cx="44" cy="64" r="3.5"/><circle cx="56" cy="64" r="3.5"/>
+      <circle cx="0" cy="8" r="3.5"/><circle cx="0" cy="20" r="3.5"/><circle cx="0" cy="32" r="3.5"/><circle cx="0" cy="44" r="3.5"/><circle cx="0" cy="56" r="3.5"/>
+      <circle cx="64" cy="8" r="3.5"/><circle cx="64" cy="20" r="3.5"/><circle cx="64" cy="32" r="3.5"/><circle cx="64" cy="44" r="3.5"/><circle cx="64" cy="56" r="3.5"/>
+    </g>
+  </mask>
+  <rect class="stamp" x="2" y="2" width="60" height="60" rx="6" mask="url(#stamp-cutouts)"/>
+  <text class="letter" x="32" y="44" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="700">B</text>
+</svg>

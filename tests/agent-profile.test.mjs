@@ -61,12 +61,12 @@ test("Markdown keeps the published facts and uses fetchable absolute links", asy
 test("direct Markdown routes return localized plain text", async () => {
   for (const locale of ["en", "de"]) {
     const { GET } = await import(`../app/for-agents/${locale}.md/route.ts`);
-    const response = GET(new Request(`https://portfolio.example/for-agents/${locale}.md`));
+    const response = GET();
     const body = await response.text();
     assert.equal(response.headers.get("content-type"), "text/markdown; charset=utf-8");
     assert.match(body, /^# Aziz Baratov/m);
     assert.match(body, /Credential ID xhx9ggfs/);
-    assert.match(body, /https:\/\/portfolio\.example\/projects\/kaspi-home/);
+    assert.match(body, /https:\/\/lifes-sidequest\.github\.io\/projects\/kaspi-home/);
     if (locale === "de") assert.match(body, /## Kompetenzen/);
   }
 });

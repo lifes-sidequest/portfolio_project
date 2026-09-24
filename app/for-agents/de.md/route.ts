@@ -1,8 +1,10 @@
 import { getAgentProfile } from "../../../content/agent-profile";
 import { renderAgentProfileMarkdown } from "../../../content/agent-profile-markdown";
 
-export function GET(request: Request) {
-  const markdown = renderAgentProfileMarkdown(getAgentProfile("de"), request.url);
+export const dynamic = "force-static";
+
+export function GET() {
+  const markdown = renderAgentProfileMarkdown(getAgentProfile("de"), "https://lifes-sidequest.github.io/");
   return new Response(markdown, {
     headers: { "Content-Type": "text/markdown; charset=utf-8" },
   });

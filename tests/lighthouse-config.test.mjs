@@ -12,6 +12,9 @@ test("defines reproducible Lighthouse CI checks for representative routes", asyn
   assert.match(config, /http:\/\/127\.0\.0\.1:3100\/about/);
   assert.match(config, /http:\/\/127\.0\.0\.1:3100\/inspiration/);
   assert.match(config, /http:\/\/127\.0\.0\.1:3100\/projects\/car-parts/);
+  assert.match(config, /python3 -m http\.server 3100 --directory out --bind 127\.0\.0\.1/);
+  assert.doesNotMatch(config, /pnpm start/);
+  assert.match(config, /chromeFlags: "--no-sandbox --headless --disable-dev-shm-usage"/);
   assert.match(config, /preset: "desktop"/);
   assert.match(config, /"categories:performance": \["error", \{ minScore: 0\.7 \}\]/);
   assert.match(config, /"categories:accessibility": \["error", \{ minScore: 1 \}\]/);

@@ -1,9 +1,10 @@
 module.exports = {
   ci: {
     collect: {
-      startServerCommand: "pnpm start --port 3100 --hostname 127.0.0.1",
-      startServerReadyPattern: "Ready",
+      startServerCommand: "python3 -m http.server 3100 --directory out --bind 127.0.0.1",
+      startServerReadyPattern: "Serving HTTP",
       startServerReadyTimeout: 15_000,
+      chromeFlags: "--no-sandbox --headless --disable-dev-shm-usage",
       numberOfRuns: 3,
       url: [
         "http://127.0.0.1:3100/",

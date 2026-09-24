@@ -20,5 +20,5 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm check
       - name: Lighthouse audit
-        continue-on-error: true
+        if: github.event_name == 'pull_request'
         run: pnpm perf:audit

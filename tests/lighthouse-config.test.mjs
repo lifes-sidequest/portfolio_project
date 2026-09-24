@@ -23,8 +23,9 @@ test("defines reproducible Lighthouse CI checks for representative routes", asyn
   assert.equal(packageJson.scripts["perf:audit"], "lhci autorun");
 });
 
-test("keeps Lighthouse findings advisory instead of blocking deployment", async () => {
+test("runs Lighthouse on pull requests without blocking direct Pages updates", async () => {
   const workflow = await readFile(new URL(".github/workflows/ci.yml", root), "utf8");
 
-  assert.match(workflow, /name: Lighthouse audit[\s\S]*?continue-on-error: true[\s\S]*?run: pnpm perf:audit/);
+  assert.match(workflow, /name: Lighthouse audit[\s\S]*?if: github\.event_name == 'pull_request'[\s\S]*?run: pnpm perf:audit/);
+  assert.doesNotMatch(workflow, /continue-on-error/);
 });

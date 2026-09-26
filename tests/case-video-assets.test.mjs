@@ -6,6 +6,8 @@ const root = new URL("../", import.meta.url);
 const kaspiCase = new URL("app/projects/kaspi-home/kaspi-home-case.tsx", root);
 const projectContent = new URL("content/projects.ts", root);
 const carPartsCase = new URL("app/projects/car-parts/car-parts-case.tsx", root);
+const courierCase = new URL("app/projects/kaspi-courier/kaspi-courier-case.tsx", root);
+const caseEnding = new URL("app/projects/_components/case-ending.tsx", root);
 
 const originalKaspiVideos = [
   "home-page.mp4",
@@ -51,4 +53,29 @@ test("Car Parts ecosystem demo uses the original videos", async () => {
   }
 
   assert.doesNotMatch(source, /demo-car-parts-(?:light|dark)-web\.mp4/);
+});
+
+test("Kaspi courier cover is used across project cards, the case hero, and project navigation", async () => {
+  const [projectSource, caseSource, endingSource] = await Promise.all([
+    readFile(projectContent, "utf8"),
+    readFile(courierCase, "utf8"),
+    readFile(caseEnding, "utf8"),
+  ]);
+
+  const files = [
+    "kaspi-courier-light.mp4",
+    "kaspi-courier-dark.mp4",
+    "kaspi-courier-poster-light.jpg",
+    "kaspi-courier-poster-dark.jpg",
+  ];
+
+  for (const file of files) {
+    const reference = new RegExp(file.replaceAll(".", "\\."));
+    assert.match(projectSource, reference, `${file} should be referenced by project cards`);
+    assert.match(caseSource, reference, `${file} should be referenced by the case hero`);
+    assert.match(endingSource, reference, `${file} should be referenced by project navigation`);
+
+    const asset = new URL(`public/images/projects/kaspi-courier/${file}`, root);
+    assert.ok((await stat(asset)).size > 0, `${file} should exist`);
+  }
 });

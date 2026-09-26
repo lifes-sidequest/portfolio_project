@@ -14,8 +14,8 @@ const caseProjects = {
     href: "/projects/kaspi-courier",
     title: { en: "Kaspi courier", de: "Kaspi Kurier" },
     subtitle: { en: "Kaspi.kz, Logistic app", de: "Kaspi.kz, Logistik-App" },
-    media: null,
-    poster: null,
+    media: { light: "/images/projects/kaspi-courier/kaspi-courier-light.mp4", dark: "/images/projects/kaspi-courier/kaspi-courier-dark.mp4" },
+    poster: { light: "/images/projects/kaspi-courier/kaspi-courier-poster-light.jpg", dark: "/images/projects/kaspi-courier/kaspi-courier-poster-dark.jpg" },
   },
   "kaspi-home": {
     href: "/projects/kaspi-home",
@@ -80,7 +80,13 @@ export function CaseEnding({
         <h2>{labels.next}</h2>
         <div className="case-next-media">
           {next.media ? (
-            <ViewportVideo key={`${next.href}-${theme}`} src={next.media[theme]} poster={next.poster?.[theme]} aria-hidden="true" />
+            <ViewportVideo
+              key={`${next.href}-${theme}`}
+              src={next.media[theme]}
+              poster={next.poster?.[theme]}
+              className={next.href === "/projects/kaspi-courier" ? "project-media-contain" : undefined}
+              aria-hidden="true"
+            />
           ) : (
             <span className="case-next-media-placeholder" aria-hidden="true" />
           )}

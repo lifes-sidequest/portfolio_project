@@ -6,6 +6,7 @@ import { RevealCharacters } from "../../_components/reveal-characters";
 import { SiteHeader } from "../../_components/site-header";
 import { useSiteClock } from "../../_components/site-clock";
 import { useSitePreferences } from "../../_components/site-preferences";
+import { ViewportVideo } from "../../_components/viewport-video";
 import { CaseEnding } from "../_components/case-ending";
 
 const copy = {
@@ -112,7 +113,17 @@ export function KaspiCourierCase() {
         </aside>
 
         <article className="case-content">
-          <Placeholder className="case-media-hero" label="Kaspi courier hero placeholder" />
+          <ViewportVideo
+            key={`kaspi-courier-hero-${theme}`}
+            src={theme === "dark"
+              ? "/images/projects/kaspi-courier/kaspi-courier-dark.mp4"
+              : "/images/projects/kaspi-courier/kaspi-courier-light.mp4"}
+            poster={theme === "dark"
+              ? "/images/projects/kaspi-courier/kaspi-courier-poster-dark.jpg"
+              : "/images/projects/kaspi-courier/kaspi-courier-poster-light.jpg"}
+            className="case-media-hero case-project-image project-media-contain"
+            aria-label="Kaspi courier interface preview"
+          />
           <Placeholder className="case-media-wide" label="Kaspi courier project overview placeholder" />
 
           <section className="case-text-section scroll-reveal">

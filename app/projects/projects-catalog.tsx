@@ -67,7 +67,13 @@ export function ProjectsCatalog() {
               <Link className="project-card catalog-project-card scroll-reveal" href={project.href} key={project.title}>
                 <figure>
                   {isVideo && mediaSource ? (
-                    <ViewportVideo key={`${project.title}-${theme}`} src={mediaSource} poster={posterSource} aria-hidden="true" />
+                    <ViewportVideo
+                      key={`${project.title}-${theme}`}
+                      src={mediaSource}
+                      poster={posterSource}
+                      className={project.href === "/projects/kaspi-courier" ? "project-media-contain" : undefined}
+                      aria-hidden="true"
+                    />
                   ) : mediaSource ? (
                     <img src={mediaSource} alt="" />
                   ) : null}

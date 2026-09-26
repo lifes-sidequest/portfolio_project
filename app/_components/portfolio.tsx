@@ -190,6 +190,7 @@ export function Portfolio() {
                     key={`${project.title}-${theme}`}
                     src={mediaSource}
                     poster={posterSource}
+                    className={project.href === "/projects/kaspi-courier" ? "project-media-contain" : undefined}
                     aria-hidden="true"
                   />
                 ) : mediaSource ? (
